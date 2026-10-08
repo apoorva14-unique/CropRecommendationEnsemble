@@ -1,5 +1,5 @@
 """
-Week 3: Complete and Reproducible Preprocessing Pipeline for Crop Recommendation.
+Complete and Reproducible Preprocessing Pipeline for Crop Recommendation.
 
 Governed strictly by:
 - reports/step9_preprocessing_policy.md
@@ -31,7 +31,10 @@ def run_preprocessing():
     # -------------------------------------------------------------------------
     # 1. LOAD ORIGINAL RAW DATASET (READ-ONLY)
     # -------------------------------------------------------------------------
-    raw_excel_path = os.path.join("data", "complete soil data.xlsx")
+    project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    raw_excel_path = os.path.join(project_dir, "data", "complete soil data.xlsx")
+    if not os.path.exists(raw_excel_path):
+        raw_excel_path = os.path.join("data", "complete soil data.xlsx")
     if not os.path.exists(raw_excel_path):
         raise FileNotFoundError(f"Raw dataset not found at {raw_excel_path}")
 
@@ -466,8 +469,8 @@ def run_preprocessing():
     # -------------------------------------------------------------------------
     # 11. SAVE PROCESSED ARTIFACTS
     # -------------------------------------------------------------------------
-    processed_dir = os.path.join("data", "processed")
-    reports_dir = "reports"
+    processed_dir = os.path.join(project_dir, "data", "processed")
+    reports_dir = os.path.join(project_dir, "reports")
     os.makedirs(processed_dir, exist_ok=True)
     os.makedirs(reports_dir, exist_ok=True)
 
@@ -741,9 +744,9 @@ def generate_full_preprocessing_report(
         f.write("---\n\n")
 
         f.write("## 10. Reproducibility & Execution\n\n")
-        f.write("The complete pipeline is packaged in `week3_preprocessing/preprocess.py` and can be re-run deterministically:\n\n")
+        f.write("The complete pipeline is packaged in `src/preprocessing/preprocess.py` and can be re-run deterministically:\n\n")
         f.write("```bash\n")
-        f.write("python week3_preprocessing/preprocess.py\n")
+        f.write("python src/preprocessing/preprocess.py\n")
         f.write("```\n")
 
 if __name__ == '__main__':

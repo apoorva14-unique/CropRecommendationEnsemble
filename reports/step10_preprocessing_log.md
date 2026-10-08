@@ -101,7 +101,7 @@ All 5 programmatic assertions passed with 100% compliance:
 
 The complete data cleaning and transformation pipeline is packaged in:
 ```bash
-python week3_preprocessing/preprocess.py
+python src/preprocessing/preprocess.py
 ```
 
 This command can be re-run deterministically at any point to reproduce `data/processed/crop_recommendation_clean.csv` from `data/complete soil data.xlsx`.

@@ -1,12 +1,14 @@
+# Python & Virtual Environments
 .venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# IDE & Editor Settings
 .vscode/
 .idea/
 .env
-# Large trained model artifact
-models/voting_ensemble.joblib
 
-# Large trained model artifact
+# Large Model Artifacts (> 100 MB GitHub limit)
+# Note: models/voting_ensemble.joblib is 151 MB and is intentionally excluded from Git.
 models/voting_ensemble.joblib

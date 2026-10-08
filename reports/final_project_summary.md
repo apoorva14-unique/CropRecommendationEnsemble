@@ -234,9 +234,10 @@ The dataset contains 611 farm records. While sufficient for tree-based ensemble 
 ## 16. Complete List of Generated Project Files
 
 ### 16.1 Source Code & Pipelines
-- [`week3_preprocessing/preprocess.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/week3_preprocessing/preprocess.py): Complete reproducible preprocessing pipeline.
-- [`week4_model_training/train_models.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/week4_model_training/train_models.py): Reproducible 10-model benchmarking script.
-- [`week4_model_training/evaluate_final.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/week4_model_training/evaluate_final.py): Independent test set evaluation and visualization generator.
+- [`src/preprocessing/preprocess.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/src/preprocessing/preprocess.py): Complete reproducible preprocessing pipeline.
+- [`src/preprocessing/ml_preparation.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/src/preprocessing/ml_preparation.py): Reproducible ML dataset splitting and preprocessor fitting.
+- [`src/modeling/train_models.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/src/modeling/train_models.py): Reproducible 10-model benchmarking and cross-validation script.
+- [`src/modeling/evaluate_final.py`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/src/modeling/evaluate_final.py): Independent test set evaluation and visualization generator.
 
 ### 16.2 Processed Datasets & Mappings
 - `data/processed/X_train.csv` & `y_train.csv`: Training feature matrix ($490 \times 27$) and target labels.
@@ -250,7 +251,7 @@ The dataset contains 611 farm records. While sufficient for tree-based ensemble 
 - [`models/best_model_metadata.json`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/models/best_model_metadata.json): JSON model card and validation metadata.
 - [`models/extra_trees_tuned.joblib`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/models/extra_trees_tuned.joblib): Standalone Extra Trees model.
 - [`models/random_forest_tuned.joblib`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/models/random_forest_tuned.joblib): Tuned Random Forest candidate.
-- [`models/voting_ensemble.joblib`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/models/voting_ensemble.joblib): Soft Voting Ensemble (ET + RF).
+- `models/voting_ensemble.joblib`: Soft Voting Ensemble (ET + RF) candidate (locally generated; excluded from Git tracking due to GitHub's 100MB limit).
 
 ### 16.4 Reports & Visualizations (`reports/`)
 - [`reports/final_project_summary.md`](file:///c:/Users/Lenovo/OneDrive/Desktop/IEEE%20paper%20details%20all/CropRecommendationEnsemble/reports/final_project_summary.md): Comprehensive project audit and summary.
@@ -271,13 +272,14 @@ The entire end-to-end experimental lifecycle can be reproduced from the raw, unm
 
 ```bash
 # 1. Run complete data preprocessing, cleaning, and leak-free train/test splitting
-python week3_preprocessing/preprocess.py
+python src/preprocessing/preprocess.py
+python src/preprocessing/ml_preparation.py
 
 # 2. Run leak-free cross-validation benchmarking, model selection, and serialization
-python week4_model_training/train_models.py
+python src/modeling/train_models.py
 
 # 3. Run final evaluation on the quarantined test set and generate all visualizations
-python week4_model_training/evaluate_final.py
+python src/modeling/evaluate_final.py
 ```
 
 All random seeds are fixed (`random_state=42`), zero preprocessing leakage occurs across splits, and the original Excel file remains 100% read-only.

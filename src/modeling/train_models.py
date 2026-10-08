@@ -1,5 +1,5 @@
 """
-Week 4: Model Training and Ensemble Benchmarking Pipeline.
+Model Training and Ensemble Benchmarking Pipeline.
 Project: Crop Recommendation Using Ensemble Techniques.
 
 Governed strictly by:
@@ -52,9 +52,13 @@ def run_model_training_experiments():
     # -------------------------------------------------------------------------
     # 1. LOAD TRAINING DATA (STRICT TEST SET ISOLATION)
     # -------------------------------------------------------------------------
-    x_train_path = os.path.join("data", "processed", "X_train.csv")
-    y_train_path = os.path.join("data", "processed", "y_train.csv")
+    project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    x_train_path = os.path.join(project_dir, "data", "processed", "X_train.csv")
+    y_train_path = os.path.join(project_dir, "data", "processed", "y_train.csv")
     
+    if not os.path.exists(x_train_path) or not os.path.exists(y_train_path):
+        x_train_path = os.path.join("data", "processed", "X_train.csv")
+        y_train_path = os.path.join("data", "processed", "y_train.csv")
     if not os.path.exists(x_train_path) or not os.path.exists(y_train_path):
         raise FileNotFoundError(f"Training data not found at {x_train_path} or {y_train_path}")
 
@@ -239,8 +243,8 @@ def run_model_training_experiments():
     rf_tuned.fit(X_train, y_train)
 
     # Save to models/
-    models_dir = "models"
-    reports_dir = "reports"
+    models_dir = os.path.join(project_dir, "models")
+    reports_dir = os.path.join(project_dir, "reports")
     os.makedirs(models_dir, exist_ok=True)
     os.makedirs(reports_dir, exist_ok=True)
 
@@ -248,7 +252,7 @@ def run_model_training_experiments():
     et_path = os.path.join(models_dir, "extra_trees_tuned.joblib")
     voting_path = os.path.join(models_dir, "voting_ensemble.joblib")
     rf_path = os.path.join(models_dir, "random_forest_tuned.joblib")
-    pipeline_src = os.path.join("data", "processed", "ml_preprocessor_pipeline.joblib")
+    pipeline_src = os.path.join(project_dir, "data", "processed", "ml_preprocessor_pipeline.joblib")
     pipeline_dest = os.path.join(models_dir, "ml_preprocessor_pipeline.joblib")
 
     joblib.dump(best_model, best_model_path)

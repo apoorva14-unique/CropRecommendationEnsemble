@@ -38,7 +38,7 @@ from sklearn.metrics import (
 
 def run_final_evaluation():
     # Set paths
-    project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
     data_dir = os.path.join(project_dir, "data", "processed")
     models_dir = os.path.join(project_dir, "models")
     reports_dir = os.path.join(project_dir, "reports")

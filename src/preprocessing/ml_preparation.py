@@ -1,5 +1,5 @@
 """
-Week 3: Machine Learning Dataset Preparation Pipeline.
+Machine Learning Dataset Preparation Pipeline.
 Project: Crop Recommendation Using Ensemble Techniques.
 
 Governed strictly by:
@@ -39,7 +39,10 @@ def prepare_ml_dataset():
     # -------------------------------------------------------------------------
     # 1. LOAD AND VERIFY PROCESSED DATASET
     # -------------------------------------------------------------------------
-    clean_csv_path = os.path.join("data", "processed", "crop_data_cleaned.csv")
+    project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    clean_csv_path = os.path.join(project_dir, "data", "processed", "crop_data_cleaned.csv")
+    if not os.path.exists(clean_csv_path):
+        clean_csv_path = os.path.join("data", "processed", "crop_data_cleaned.csv")
     if not os.path.exists(clean_csv_path):
         raise FileNotFoundError(f"Cleaned dataset not found at {clean_csv_path}")
 
@@ -206,7 +209,7 @@ def prepare_ml_dataset():
     # -------------------------------------------------------------------------
     # 6. SAVE PROCESSED ML DATASETS
     # -------------------------------------------------------------------------
-    out_dir = os.path.join("data", "processed")
+    out_dir = os.path.join(project_dir, "data", "processed")
     os.makedirs(out_dir, exist_ok=True)
 
     # 1. Processed/Encoded Feature Matrices
@@ -242,7 +245,7 @@ def prepare_ml_dataset():
     # -------------------------------------------------------------------------
     # 7. GENERATE COMPREHENSIVE ML DATASET REPORT
     # -------------------------------------------------------------------------
-    report_path = os.path.join("reports", "ml_dataset_report.md")
+    report_path = os.path.join(project_dir, "reports", "ml_dataset_report.md")
     generate_ml_dataset_report(
         report_path=report_path,
         total_samples=total_samples,
@@ -413,7 +416,7 @@ def generate_ml_dataset_report(
 
         f.write("## 7. Reproducibility Settings & Artifact Manifest\n\n")
         f.write("- **Random Seed:** `random_state = 42`\n")
-        f.write("- **Execution Script:** `week3_preprocessing/ml_preparation.py`\n")
+        f.write("- **Execution Script:** `src/preprocessing/ml_preparation.py`\n")
         f.write("- **Pipeline Serialization:** `data/processed/ml_preprocessor_pipeline.joblib`\n\n")
         f.write("### Generated Artifacts\n\n")
         f.write("| File | Dimensions | Purpose |\n")

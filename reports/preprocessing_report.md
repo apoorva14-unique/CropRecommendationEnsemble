@@ -4,7 +4,7 @@
 **Execution Date:** 2026-10-08  
 **Project:** Crop Recommendation Using Ensemble Techniques  
 **Governing Specification:** `reports/step9_preprocessing_policy.md`  
-**Clean Dataset Output:** `data\processed\crop_data_cleaned.csv`  
+**Clean Dataset Output:** `C:\Users\Lenovo\OneDrive\Desktop\IEEE paper details all\CropRecommendationEnsemble\data\processed\crop_data_cleaned.csv`  
 **Source Dataset:** `data/complete soil data.xlsx` (Read-only, strictly immutable)  
 **Status:** Completed, Validated, and Fully Documented.  
 
@@ -136,8 +136,8 @@ This establishes **34 canonical crop classes** across the 611 records.
 | Column Name | Type Before | Type After | Missing Before | Missing After | Modeling Role |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **`S.NO`** | `int64` | `int64` | 0 | **0** | Tracking ID (Exclude from X) |
-| **`MANDAL NAME`** | `str` | `str` | 0 | **0** | Location Metadata (Exclude from X) |
-| **`VILLAGE NAME`** | `str` | `str` | 0 | **0** | Location Metadata (Exclude from X) |
+| **`MANDAL NAME`** | `object` | `object` | 0 | **0** | Location Metadata (Exclude from X) |
+| **`VILLAGE NAME`** | `object` | `object` | 0 | **0** | Location Metadata (Exclude from X) |
 | **`SOIL TYPE`** | `int64` | `int64` | 0 | **0** | Categorical ML Feature |
 | **`PH`** | `float64` | `float64` | 0 | **0** | Continuous ML Feature |
 | **`EC`** | `object` | `float64` | 0 | **0** | Continuous ML Feature |
@@ -154,7 +154,7 @@ This establishes **34 canonical crop classes** across the 611 records.
 | **`Temparature`** | `float64` | `float64` | 0 | **0** | Continuous ML Feature |
 | **`Humidity`** | `float64` | `float64` | 20 | **0** | Continuous ML Feature |
 | **`Rainfall`** | `float64` | `float64` | 0 | **0** | Continuous ML Feature |
-| **`CROP`** | `str` | `str` | 0 | **0** | Target Label (y) |
+| **`CROP`** | `object` | `object` | 0 | **0** | Target Label (y) |
 
 ---
 
@@ -172,8 +172,8 @@ All 5 programmatic assertions executed successfully:
 
 ## 10. Reproducibility & Execution
 
-The complete pipeline is packaged in `week3_preprocessing/preprocess.py` and can be re-run deterministically:
+The complete pipeline is packaged in `src/preprocessing/preprocess.py` and can be re-run deterministically:
 
 ```bash
-python week3_preprocessing/preprocess.py
+python src/preprocessing/preprocess.py
 ```

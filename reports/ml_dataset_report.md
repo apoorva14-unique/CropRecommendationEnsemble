@@ -76,17 +76,17 @@ The target variable `CROP` encompasses **34 canonical classes** across 611 sampl
 | 16 | **`Sesame`** | 6 | 0.98% | 5 | 1 | 83.3% |
 | 17 | **`Korra`** | 4 | 0.65% | 3 | 1 | 75.0% |
 | 18 | **`Tomato`** | 4 | 0.65% | 3 | 1 | 75.0% |
-| 19 | **`Bean Gram (Pending Verification)`** | 3 | 0.49% | 2 | 1 | 66.7% |
+| 19 | **`Red Chilli`** | 3 | 0.49% | 2 | 1 | 66.7% |
 | 20 | **`Chilli`** | 3 | 0.49% | 2 | 1 | 66.7% |
-| 21 | **`Red Chilli`** | 3 | 0.49% | 2 | 1 | 66.7% |
-| 22 | **`Acid Lime`** | 2 | 0.33% | 2 | 0 | 100.0% |
-| 23 | **`Maize`** | 2 | 0.33% | 2 | 0 | 100.0% |
+| 21 | **`Bean Gram (Pending Verification)`** | 3 | 0.49% | 2 | 1 | 66.7% |
+| 22 | **`Maize`** | 2 | 0.33% | 2 | 0 | 100.0% |
+| 23 | **`Acid Lime`** | 2 | 0.33% | 2 | 0 | 100.0% |
 | 24 | **`Green Gram`** | 2 | 0.33% | 2 | 0 | 100.0% |
-| 25 | **`Chamanthi (Mums)`** | 1 | 0.16% | 1 | 0 | 100.0% |
-| 26 | **`Muskmelon`** | 1 | 0.16% | 1 | 0 | 100.0% |
-| 27 | **`Guava`** | 1 | 0.16% | 1 | 0 | 100.0% |
-| 28 | **`Sweet Lime`** | 1 | 0.16% | 1 | 0 | 100.0% |
-| 29 | **`Red Gram`** | 1 | 0.16% | 1 | 0 | 100.0% |
+| 25 | **`Guava`** | 1 | 0.16% | 1 | 0 | 100.0% |
+| 26 | **`Chamanthi (Mums)`** | 1 | 0.16% | 1 | 0 | 100.0% |
+| 27 | **`Muskmelon`** | 1 | 0.16% | 1 | 0 | 100.0% |
+| 28 | **`Red Gram`** | 1 | 0.16% | 1 | 0 | 100.0% |
+| 29 | **`Sweet Lime`** | 1 | 0.16% | 1 | 0 | 100.0% |
 | 30 | **`Castor`** | 1 | 0.16% | 1 | 0 | 100.0% |
 | 31 | **`Allam (Ginger)`** | 1 | 0.16% | 1 | 0 | 100.0% |
 | 32 | **`Nannari`** | 1 | 0.16% | 1 | 0 | 100.0% |
@@ -182,7 +182,7 @@ Every potential point of data leakage has been audited and mitigated:
 ## 7. Reproducibility Settings & Artifact Manifest
 
 - **Random Seed:** `random_state = 42`
-- **Execution Script:** `week3_preprocessing/ml_preparation.py`
+- **Execution Script:** `src/preprocessing/ml_preparation.py`
 - **Pipeline Serialization:** `data/processed/ml_preprocessor_pipeline.joblib`
 
 ### Generated Artifacts
