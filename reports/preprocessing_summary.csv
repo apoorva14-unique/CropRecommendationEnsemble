@@ -1,0 +1,17 @@
+metric,before_preprocessing,after_preprocessing,delta,notes
+Original Rows,611,611,0,100% data retention (0 rows dropped)
+Final Rows,611,611,0,All valid observations preserved
+Original Spreadsheet Columns,16384,20,-16364,"Ignored 16,364 empty trailing Excel artifact columns"
+Genuine Agricultural Columns,20,20,0,Retained all 20 authentic columns
+Tracking Identifier Columns,1,1,0,S.NO retained as identifier; excluded from ML features
+Location Metadata Columns,2,2,0,MANDAL NAME & VILLAGE NAME retained for audit; excluded from ML features
+Final Candidate ML Features (Suite B),16,16,0,Soil Type (categorical) + 15 continuous soil/weather features
+Core Verified ML Features (Suite A),11,11,0,"Soil Type + N, P2O5, K20, PH, EC, Temp, Humidity, Rainfall, OC, S"
+Missing Values (Humidity),20,0,-20,Imputed 20 Mydukur values with overall median 72.59%
+Malformed String Values,4,0,-4,"EC ('0..07'), FC ('2..956'), MN ('1.13.79'), BA ('0..16') converted to float64"
+Target Crop Classes,61,34,-27,Standardized into 34 canonical classes without aggressive guessing
+Rows Removed,0,0,0,Zero observations deleted
+Values Imputed,0,20,20,Only the 20 missing Humidity values imputed
+Decimal Keystroke Typos Repaired,4,0,-4,"OC 31.0->0.31, 30.35->0.30, 23.0->0.23; BA 96.0->0.96 repaired with physical proof"
+Agronomic Extremes Preserved,4,4,0,"EC=8.18, P2O5=856, N=850, N=801 preserved as genuine anomalies"
+Duplicate Records,0,0,0,Zero duplicate agricultural records detected

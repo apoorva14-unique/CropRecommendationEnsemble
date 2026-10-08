@@ -1,0 +1,10 @@
+Metric,Value,Percentage
+Accuracy,0.5372,53.72%
+Macro Precision,0.2901,29.01%
+Macro Recall,0.3131,31.31%
+Macro F1,0.2904,29.04%
+Weighted Precision,0.512,51.20%
+Weighted Recall,0.5372,53.72%
+Weighted F1,0.517,51.70%
+Top-3 Accuracy,0.7934,79.34%
+Top-5 Accuracy,0.8512,85.12%

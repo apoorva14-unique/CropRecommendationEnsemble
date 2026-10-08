@@ -1,0 +1,62 @@
+raw_label,frequency,canonical_label,category,confidence,action,status,justification
+paddy,143,Paddy,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard crop name
+cotton,89,Cotton,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard crop name
+Grownut,55,Groundnut,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize colloquial spelling Grownut to Groundnut
+Black Gram,48,Black Gram,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard canonical Title Case
+Bajra,34,Bajra,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard pearl millet
+Black gram,30,Black Gram,Format Normalization,High,format_normalization,Confirmed Correction,Standardize sentence case to Title Case
+Bengal gram,24,Bengal Gram,Format Normalization,High,format_normalization,Confirmed Correction,Standardize sentence case to Title Case
+Turmeric,22,Turmeric,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard canonical Title Case
+sweet orange,12,Sweet Orange,Format Normalization,High,format_normalization,Confirmed Correction,Standardize lowercase to Title Case (Citrus sinensis)
+sunflower,11,Sunflower,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard crop name
+Blakgram,10,Black Gram,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo (missing 'c' and space)
+banana,9,Banana,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard crop name
+turmeric,8,Turmeric,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard crop name
+onion,8,Onion,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard crop name
+grownut,6,Groundnut,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize colloquial spelling and capitalize
+soyabean,6,Soybean,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize Indian spelling soyabean to Soybean
+chamanthi,6,Chamanthi,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize Telugu regional flower name (Chrysanthemum)
+Bengal Gram,6,Bengal Gram,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard canonical Title Case
+Vegetables,5,Vegetables,Botanical Preservation,High,keep_as_is,Confirmed Correction,Preserve aggregate horticultural class
+Banana,5,Banana,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard canonical Title Case
+Jowar,4,Jowar,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard sorghum cereal
+Cotton,4,Cotton,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard canonical Title Case
+korra,4,Korra,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize Telugu name for Foxtail Millet
+Tamota,4,Tomato,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize Telugu phonetic Tamota to Tomato
+sesam,4,Sesame,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize truncated sesam to Sesame
+Soyabean,3,Soybean,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize Indian spelling Soyabean to Soybean
+black gram,3,Black Gram,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize lowercase to Title Case
+Bean Gram,3,Bean Gram (Pending Verification),Unresolved Anomaly,Moderate,source_verification_required,Unresolved Anomaly,Suspected typo for Bengal Gram in Kondapuram; retained distinct to avoid ungrounded guessing
+sweet ornage,3,Sweet Orange,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo 'ornage' to 'orange'
+Red Chilli,3,Red Chilli,Botanical Preservation,Moderate,evaluate_subclass,Confirmed Correction,Commercial subclass of Capsicum annuum (mature dried)
+maize,2,Maize,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard cereal name
+Acidlime,2,Acid Lime,Format Normalization,High,format_normalization,Confirmed Correction,Standardize to spaced Title Case (Citrus aurantifolia)
+Green Gram,2,Green Gram,Botanical Preservation,High,keep_separate_species,Confirmed Correction,Preserve distinct pulse species (Vigna radiata / Moong)
+Sunflower,2,Sunflower,Botanical Preservation,High,keep_as_is,Confirmed Correction,Standard canonical Title Case
+chillis,2,Chilli,Format Normalization,High,format_normalization,Confirmed Correction,Standardize spelling and capitalize
+Turemaric,2,Turmeric,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct phonetic spelling typo
+Jouar,2,Jowar,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct phonetic spelling typo Jouar to Jowar
+Blak Gram,2,Black Gram,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo (missing 'c')
+jouar,1,Jowar,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct phonetic spelling typo and casing
+guava,1,Guava,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize fruit name (Psidium guajava)
+Sweet orange,1,Sweet Orange,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize sentence case to Title Case
+termeric,1,Turmeric,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct phonetic spelling typo
+muckmelon,1,Muskmelon,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo muckmelon to Muskmelon (Cucumis melo)
+swwet orange,1,Sweet Orange,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo 'swwet' to 'sweet'
+mums,1,Chamanthi (Mums),Horticultural Synonym,Moderate,synonym_consolidation,Confirmed Correction,Universal English trade name for Chrysanthemum (Chamanthi)
+Blak gram,1,Black Gram,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo (missing 'c') and casing
+Chillis,1,Chilli,Format Normalization,High,format_normalization,Confirmed Correction,Standardize plural to singular canonical Title Case
+Turemeric,1,Turmeric,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct phonetic spelling typo
+Blackgram,1,Black Gram,Spelling Correction,High,spelling_correction,Confirmed Correction,Insert missing space between words
+Red Gram,1,Red Gram,Botanical Preservation,High,keep_separate_species,Confirmed Correction,Preserve distinct pulse species (Cajanus cajan / Pigeonpea)
+vegetables,1,Vegetables,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize aggregate horticultural category
+sweet lime,1,Sweet Lime,Botanical Preservation,High,keep_separate_species,Confirmed Correction,Preserve distinct citrus species (Citrus limetta / Mitha Nimbu)
+sesasum,1,Sesame,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct spelling typo sesasum to Sesame
+Allam,1,Allam (Ginger),Botanical Preservation,High,keep_as_is,Confirmed Correction,Preserve Telugu regional crop name for Ginger (Zingiber officinale)
+Turmaric,1,Turmeric,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct phonetic spelling typo
+Caster,1,Castor,Spelling Correction,High,spelling_correction,Confirmed Correction,Correct typo Caster to Castor (Ricinus communis)
+papaya,1,Papaya,Format Normalization,High,format_normalization,Confirmed Correction,Capitalize standard fruit name (Carica papaya)
+Nannari,1,Nannari,Botanical Preservation,High,keep_as_is,Confirmed Correction,Preserve Telugu regional medicinal crop (Hemidesmus indicus)
+Greenchilli,1,Green Chilli,Botanical Preservation,Moderate,evaluate_subclass,Confirmed Correction,Commercial subclass of Capsicum annuum (fresh immature)
+Sesamum,1,Sesame,Spelling Correction,High,spelling_correction,Confirmed Correction,Standardize Latin genus name to common name Sesame
+Chamanthi,1,Chamanthi,Botanical Preservation,High,keep_as_is,Confirmed Correction,Preserve valid Title Case Telugu flower name

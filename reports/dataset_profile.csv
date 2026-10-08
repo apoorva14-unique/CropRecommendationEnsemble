@@ -1,0 +1,21 @@
+column_name,pandas_dtype,non_null_count,missing_count,missing_percentage,unique_count
+S.NO,int64,611,0,0.0,608
+MANDAL NAME,object,611,0,0.0,27
+VILLAGE NAME,object,611,0,0.0,231
+SOIL TYPE,int64,611,0,0.0,12
+PH,float64,611,0,0.0,108
+EC,object,611,0,0.0,57
+OC,float64,611,0,0.0,37
+N,float64,611,0,0.0,39
+P2O5,int64,611,0,0.0,87
+K20,int64,611,0,0.0,106
+S,int64,611,0,0.0,40
+CU,float64,611,0,0.0,315
+FC,object,611,0,0.0,437
+MN,object,611,0,0.0,531
+ZN,float64,611,0,0.0,359
+BA,object,611,0,0.0,89
+Temparature,float64,611,0,0.0,23
+Humidity,float64,591,20,3.27,22
+Rainfall,float64,611,0,0.0,26
+CROP,object,611,0,0.0,61

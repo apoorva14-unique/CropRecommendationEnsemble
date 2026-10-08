@@ -1,0 +1,62 @@
+raw_crop_label,raw_frequency,normalized_label,normalized_frequency,case_whitespace_variants
+paddy,143,paddy,143,None (Single variant)
+cotton,89,cotton,93,"cotton, Cotton"
+Grownut,55,grownut,61,"Grownut, grownut"
+Black Gram,48,black gram,81,"Black Gram, Black gram, black gram"
+Bajra,34,bajra,34,None (Single variant)
+Black gram,30,black gram,81,"Black Gram, Black gram, black gram"
+Bengal gram,24,bengal gram,30,"Bengal gram, Bengal Gram"
+Turmeric,22,turmeric,30,"Turmeric, turmeric"
+sweet orange,12,sweet orange,13,"sweet orange, Sweet orange"
+sunflower,11,sunflower,13,"sunflower, Sunflower"
+Blakgram,10,blakgram,10,None (Single variant)
+banana,9,banana,14,"banana, Banana"
+turmeric,8,turmeric,30,"Turmeric, turmeric"
+onion,8,onion,8,None (Single variant)
+grownut,6,grownut,61,"Grownut, grownut"
+soyabean,6,soyabean,9,"soyabean, Soyabean"
+chamanthi,6,chamanthi,7,"chamanthi, Chamanthi"
+Bengal Gram,6,bengal gram,30,"Bengal gram, Bengal Gram"
+Vegetables,5,vegetables,6,"Vegetables, vegetables"
+Banana,5,banana,14,"banana, Banana"
+Jowar,4,jowar,4,None (Single variant)
+Cotton,4,cotton,93,"cotton, Cotton"
+korra,4,korra,4,None (Single variant)
+Tamota,4,tamota,4,None (Single variant)
+sesam,4,sesam,4,None (Single variant)
+Soyabean,3,soyabean,9,"soyabean, Soyabean"
+black gram,3,black gram,81,"Black Gram, Black gram, black gram"
+Bean Gram,3,bean gram,3,None (Single variant)
+sweet ornage,3,sweet ornage,3,None (Single variant)
+Red Chilli,3,red chilli,3,None (Single variant)
+maize,2,maize,2,None (Single variant)
+Acidlime,2,acidlime,2,None (Single variant)
+Green Gram,2,green gram,2,None (Single variant)
+Sunflower,2,sunflower,13,"sunflower, Sunflower"
+chillis,2,chillis,3,"chillis, Chillis"
+Turemaric,2,turemaric,2,None (Single variant)
+Jouar,2,jouar,3,"Jouar, jouar"
+Blak Gram,2,blak gram,3,"Blak Gram, Blak gram"
+jouar,1,jouar,3,"Jouar, jouar"
+guava,1,guava,1,None (Single variant)
+Sweet orange,1,sweet orange,13,"sweet orange, Sweet orange"
+termeric,1,termeric,1,None (Single variant)
+muckmelon,1,muckmelon,1,None (Single variant)
+swwet orange,1,swwet orange,1,None (Single variant)
+mums,1,mums,1,None (Single variant)
+Blak gram,1,blak gram,3,"Blak Gram, Blak gram"
+Chillis,1,chillis,3,"chillis, Chillis"
+Turemeric,1,turemeric,1,None (Single variant)
+Blackgram,1,blackgram,1,None (Single variant)
+Red Gram,1,red gram,1,None (Single variant)
+vegetables,1,vegetables,6,"Vegetables, vegetables"
+sweet lime,1,sweet lime,1,None (Single variant)
+sesasum,1,sesasum,1,None (Single variant)
+Allam,1,allam,1,None (Single variant)
+Turmaric,1,turmaric,1,None (Single variant)
+Caster,1,caster,1,None (Single variant)
+papaya,1,papaya,1,None (Single variant)
+Nannari,1,nannari,1,None (Single variant)
+Greenchilli,1,greenchilli,1,None (Single variant)
+Sesamum,1,sesamum,1,None (Single variant)
+Chamanthi,1,chamanthi,7,"chamanthi, Chamanthi"
